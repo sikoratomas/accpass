@@ -1,15 +1,15 @@
-Create user account
+#Create user account
 #has to be first.last format
 #sudo adduser username --force-badname
 
 echo -n "Enter the username: "
 read username
 
-echo -n "Enter the password: "
-read -s password
+#echo -n "Enter the password: "
+#read -s password
 
 adduser "$username" --force-badname
-echo $username:$password | chpasswd
+#echo $username:$password | chpasswd
 #echo "$password" | passwd "$username" --stdin
 
 
